@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  background-color: #d4d2d2;
+}
+.sidebar{
+  background-color: #d4d2d2;
+  height: 100vh;
+  width: 100%;
+  display:none;
+  flex-direction: column;
+  text-align: center;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+.sidebar ul{
+  width: 100%;
+}
+.sidebar li{
+  line-height: 4rem;
+  list-style-type: none;
+  width: 100%;
+}
+.sidebar li a{
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  color: rgb(31, 29, 29);
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.sidebar li a:hover{
+  background-color: rgb(2, 2, 32);
+  color: white;
+  width: 100%;
+}
+#exclusive li a:hover{
+  background: none;
+  color: rgb(72, 72, 78);
+}
+#aboutdropdown, #supportdropdown{
+  background-color: rgb(158, 150, 170);
+  margin-left: 6rem;
+  border-radius: 0.5rem;
+  width: 50%;
+  display: none;
+  flex-direction: column;
+}
+
+#aboutdropdown li a, #supportdropdown li a{
+  color: rgb(27, 18, 18);
+  border-bottom: 1px solid white;
+}
+#aboutdropdown li a:hover, 
+#supportdropdown li a:hover{
+  background-color: rgb(187, 183, 192);
+  color: white;
+  transition: .3s ease;
+}
+
+
+div .socials{
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+div .socials img{
+  height: 40px;
+}
+.username{
+  text-align: center;
+  color: rgb(65, 59, 59);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2rem;
+}
+#mainbar{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 8px 0;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+#mainbar h1{
+  font-size: 20px;
+  font-family: "Righteous", sans-serif;
+  color: rgb(2, 2, 32);
+  font-weight: 500;
+  padding-left: 0.4rem;
+}
+
+#mainbar img{
+  height: 4rem;
+}
+#mainbar ul li img{
+  height: 30px;
+}
+.bar{
+  padding-right: 0.5rem;
+}
